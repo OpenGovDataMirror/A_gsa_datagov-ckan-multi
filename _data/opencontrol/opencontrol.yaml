@@ -1,0 +1,26 @@
+schema_version: 1.0.0
+name: Data.gov Multi-tenant CKAN
+metadata:
+  authorization_id: GSA-FAS-TTS-OPP-Datagov-multi_ckan
+  description: A System Security Plan for the U.S. General Examples Administration's
+    Example System following NIST SP 800-53.
+  organization:
+    name: U.S. General Examples Administration
+    abbreviation: GSA
+  repository: https://github.com/GSA/datagov-ckan-multi
+components:
+- ./components/CKAN
+- ./components/Data.gov
+- ./components/FY18-FISMA-Audit-Findings
+- ./components/GSA-BSP
+- ./components/GSA-OCISO
+- ./components/GSA-PrivacyOffice
+- ./components/GSA-Security
+- ./components/ossec-hids
+- ./components/rancher
+- ./components/twistlock
+- ./components/Other
+standards:
+- ./standards/NIST-SP-800-53-rev4.yaml
+certifications:
+- ./certifications/fisma-low-impact.yaml
